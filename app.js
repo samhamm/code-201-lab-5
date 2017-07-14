@@ -14,6 +14,8 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 function sum(a,b){ //eslint-disable-line
   var result = a + b;
   var message = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
+  var sumInDOM = document.getElementById('sum');
+  sumInDOM.textContent = message;
   return [result, message];
 }
 
